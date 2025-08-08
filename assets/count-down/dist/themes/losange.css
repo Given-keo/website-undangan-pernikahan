@@ -79,10 +79,10 @@
 }
 
 /* untuk mobile */
-@media (max-width: 320px) {
+@media (max-width: 322px) {
   .simply-countdown-losange > .simply-section {
-    width: 40px !important;
-    height: 40px !important;
+    width: 45px !important;
+    height: 45px !important;
   }
 
   .simply-countdown-losange > .simply-section .simply-amount {
@@ -97,8 +97,8 @@
 /* untuk mobile */
 @media (max-width: 300px) {
   .simply-countdown-losange > .simply-section {
-    width: 45px !important;
-    height: 45px !important;
+    width: 40px !important;
+    height: 40px !important;
   }
 
   .simply-countdown-losange > .simply-section .simply-amount {
