@@ -79,8 +79,23 @@
 }
 
 /* untuk mobile */
-
 @media (max-width: 320px) {
+  .simply-countdown-losange > .simply-section {
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  .simply-countdown-losange > .simply-section .simply-amount {
+    font-size: 1.5rem !important;
+  }
+
+  .simply-countdown-losange > .simply-section .simply-word {
+    font-size: 0.5rem !important;
+  }
+}
+
+/* untuk mobile */
+@media (max-width: 300px) {
   .simply-countdown-losange > .simply-section {
     width: 45px !important;
     height: 45px !important;
