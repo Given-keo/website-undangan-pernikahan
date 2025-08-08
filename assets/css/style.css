@@ -22,9 +22,17 @@
 
 /* body */
 body {
+  padding-right: 0 !important;
+}
+
+/* Pastikan scroll tetap normal saat offcanvas terbuka */
+body:has(.offcanvas.show) {
+  overflow-y: auto !important;
+}
+
+body {
   font-family: "Work Sans", sans-serif;
   font-size: 1.2 rem;
-  /* min-height: 4000px; */
 }
 
 /* hero section */
@@ -45,6 +53,7 @@ body {
 .hero {
   position: relative;
   min-height: 100vh;
+  width: 100%;
   background-color: rgba(0, 0, 0, 0.463);
 }
 
@@ -87,11 +96,11 @@ body {
 }
 
 .mynavbar .offcanvas.offcanvas-end {
-  width: 100vw;
+  /* width: 100vw; */
   max-width: 60vw;
-  left: 0;
+  left: auto;
   right: 0;
-  border-left: none;
+  /* border-left: none; */
 }
 
 .offcanvas-body {
@@ -121,7 +130,6 @@ body {
   font-family: "QLD", sans-serif;
   font-size: 2.1rem;
   font-weight: bold;
-  /* color: var(--second-color); */
 }
 
 /* home */
@@ -301,7 +309,6 @@ body {
   background-repeat: no-repeat;
 }
 
-
 /** timeline kiri **/
 .timeline li .timeline-panel {
   margin-top: -20px;
@@ -350,7 +357,6 @@ body {
   border-color: transparent var(--second-color) transparent transparent;
 }
 
-
 /* gallery */
 .gallery {
   /* background: var(--second-color); */
@@ -396,8 +402,6 @@ body {
   color: #999;
   margin: 0;
 }
-
-
 
 /* ==== media query ==== */
 
@@ -488,8 +492,6 @@ body {
     font-size: 85%;
   }
 
-  /* panel  */
-
   /* panel sebelah kanan (atas dan bawah)  */
   .timeline li .timeline-panel {
     width: 70%;
@@ -549,5 +551,141 @@ body {
     font-weight: 500;
     text-transform: uppercase;
     text-align: center;
+  }
+
+  /* panel sebelah kanan (atas dan bawah)  */
+  .timeline li .timeline-panel {
+    width: 70%;
+    float: right;
+    padding: 1.5rem;
+    margin-top: -10px;
+    position: relative;
+    background-color: var(--second-color);
+    border-radius: 10px;
+    transform: translateX(10%);
+  }
+
+  .timeline li .timeline-panel::before {
+    content: "";
+    position: absolute;
+    top: 55px;
+    left: -14px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 15px 10px 0;
+    border-color: transparent var(--second-color) transparent transparent;
+  }
+
+  /* panel sebelah kiri (lapisan tengah) */
+  .timeline li.timeline-reverse .timeline-panel {
+    width: 70%;
+    float: left;
+    padding: 1.5rem;
+    position: relative;
+    background-color: var(--second-color);
+    border-radius: 10px;
+    transform: translateX(53%);
+  }
+
+  .timeline li.timeline-reverse .timeline-panel::before {
+    content: "";
+    position: absolute;
+    top: 55px;
+    left: -14px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 15px 10px 0;
+    border-color: transparent var(--second-color) transparent transparent;
+  }
+
+  .story h2 {
+    font-size: 2.5rem;
+    font-family: "QLD", sans-serif;
+    font-weight: bold;
+    color: var(--bg);
+  }
+
+  .story p {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: var(--bg);
+  }
+}
+
+
+/* handphone (mobile) */
+@media (max-width: 432px) {
+  html {
+    font-size: 75%;
+  }
+
+  .mynavbar .navbar-nav .nav-link {
+    font-size: 1.2rem !important;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  /* panel sebelah kanan (atas dan bawah)  */
+  .timeline li .timeline-panel {
+    width: 70%;
+    float: right;
+    padding: 1.5rem;
+    margin-top: -10px;
+    position: relative;
+    background-color: var(--second-color);
+    border-radius: 10px;
+    transform: translateX(25%);
+  }
+
+  .timeline li .timeline-panel::before {
+    content: "";
+    position: absolute;
+    top: 55px;
+    left: -14px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 15px 10px 0;
+    border-color: transparent var(--second-color) transparent transparent;
+  }
+
+  /* panel sebelah kiri (lapisan tengah) */
+  .timeline li.timeline-reverse .timeline-panel {
+    width: 70%;
+    float: left;
+    margin-top: -10px;
+    padding: 1.5rem;
+    position: relative;
+    background-color: var(--second-color);
+    border-radius: 10px;
+    transform: translateX(67%);
+  }
+
+  .timeline li.timeline-reverse .timeline-panel::before {
+    content: "";
+    position: absolute;
+    top: 55px;
+    left: -14px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 15px 10px 0;
+    border-color: transparent var(--second-color) transparent transparent;
+  }
+
+  .story h2 {
+    font-size: 2.5rem;
+    font-family: "QLD", sans-serif;
+    font-weight: bold;
+    color: var(--bg);
+  }
+
+  .story p {
+    margin-top: 10px;
+    font-size: 0.7rem;
+    color: var(--bg);
   }
 }

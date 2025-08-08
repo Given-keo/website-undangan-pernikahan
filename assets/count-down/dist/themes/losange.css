@@ -77,3 +77,21 @@
     font-size: 0.75rem;
   }
 }
+
+/* untuk mobile */
+
+@media (min-width: 320px) {
+  .simply-countdown-losange > .simply-section {
+    width: 45px;
+    height: 45px;
+  }
+
+  .simply-countdown-losange > .simply-section .simply-amount {
+    font-size: 1.5rem;
+  }
+
+  .simply-countdown-losange > .simply-section .simply-word {
+    font-size: 0.5rem;
+  }
+}
+
