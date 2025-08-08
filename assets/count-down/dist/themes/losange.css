@@ -50,48 +50,48 @@
 
 @media (min-width: 640px) {
   .simply-countdown-losange > .simply-section {
-    width: 80px;
-    height: 80px;
+    width: 80px !important;
+    height: 80px !important;
   }
 
   .simply-countdown-losange > .simply-section .simply-amount {
-    font-size: 1.5rem;
+    font-size: 1.5rem !important;
   }
 
   .simply-countdown-losange > .simply-section .simply-word {
-    font-size: 0.7rem;
+    font-size: 0.7rem !important;
   }
 }
 
 @media (min-width: 1024px) {
   .simply-countdown-losange > .simply-section {
-    width: 90px;
-    height: 90px;
+    width: 90px !important;
+    height: 90px !important;
   }
 
   .simply-countdown-losange > .simply-section .simply-amount {
-    font-size: 1.75rem;
+    font-size: 1.75rem !important;
   }
 
   .simply-countdown-losange > .simply-section .simply-word {
-    font-size: 0.75rem;
+    font-size: 0.75rem !important;
   }
 }
 
 /* untuk mobile */
 
-@media (min-width: 320px) {
+@media (max-width: 320px) {
   .simply-countdown-losange > .simply-section {
-    width: 45px;
-    height: 45px;
+    width: 45px !important;
+    height: 45px !important;
   }
 
   .simply-countdown-losange > .simply-section .simply-amount {
-    font-size: 1.5rem;
+    font-size: 1.5rem !important;
   }
 
   .simply-countdown-losange > .simply-section .simply-word {
-    font-size: 0.5rem;
+    font-size: 0.5rem !important;
   }
 }
 
