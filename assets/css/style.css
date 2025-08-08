@@ -1,0 +1,552 @@
+/* penggunaan font */
+@font-face {
+  font-family: "Work Sans";
+  src: url("../fonts/Work_Sans/WorkSans-VariableFont_wght.ttf") format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "QLD";
+  src: url("../fonts/Playwrite_AU_QLD/PlaywriteAUQLD-VariableFont_wght.ttf") format("truetype");
+  font-style: normal;
+}
+
+/* variable */
+:root {
+  --primary-color: #f9c2ca;
+  --bg: #0a0a0a;
+  --shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+  --hover-color: #ca8c95;
+  --second-color: #eb687c;
+}
+
+/* body */
+body {
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.2 rem;
+  /* min-height: 4000px; */
+}
+
+/* hero section */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/bg-hero.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: opacity(100);
+  z-index: -1;
+}
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.463);
+}
+
+.hero h1 {
+  font-family: "QLD", sans-serif;
+  font-size: 4rem;
+}
+
+.hero h4 {
+  font-size: 1.5rem;
+}
+
+.hero p {
+  font-size: 1.3rem;
+}
+
+.hero a {
+  background: var(--primary-color);
+  font-weight: 500;
+}
+
+.hero a:hover {
+  background: var(--hover-color);
+  color: black;
+}
+
+.hero h1,
+.hero h4,
+.hero p {
+  text-shadow: var(--shadow);
+}
+
+/* navbar */
+
+.mynavbar {
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  width: 100%;
+}
+
+.mynavbar .offcanvas.offcanvas-end {
+  width: 100vw;
+  max-width: 60vw;
+  left: 0;
+  right: 0;
+  border-left: none;
+}
+
+.offcanvas-body {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.mynavbar .container .offcanvas {
+  height: 100vh;
+}
+
+.mynavbar .navbar-nav .nav-link {
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.mynavbar .navbar-nav .nav-link:hover {
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--hover-color);
+}
+
+.mynavbar .navbar-brand,
+.mynavbar .offcanvas .offcanvas-title {
+  font-family: "QLD", sans-serif;
+  font-size: 2.1rem;
+  font-weight: bold;
+  /* color: var(--second-color); */
+}
+
+/* home */
+.home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/bg-home.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: opacity(100);
+  z-index: -1;
+}
+
+.home {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  margin-top: -4.8rem;
+  padding-top: 10rem;
+  padding-bottom: 8rem;
+  min-height: 100vh;
+  text-shadow: var(--shadow);
+}
+
+.home .title-pernikahan {
+  font-family: "QLD", sans-serif;
+  font-weight: bold;
+  /* color: var(--second-color); */
+}
+
+/* hero-couple */
+.home .couple {
+  margin-top: 3rem;
+}
+
+.home .couple h3 {
+  /* font-family: "QLD", sans-serif; */
+  font-weight: bold;
+  font-size: 2rem;
+  color: var(--second-color);
+}
+
+.home .couple img {
+  width: 100%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.home .couple .heart {
+  width: 70px;
+  height: 70px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid var(--second-color);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(40px);
+}
+
+.home .heart i {
+  color: var(--second-color);
+}
+
+/* info */
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.info {
+  /* background: var(--second-color); */
+  padding-top: 8rem;
+  padding-bottom: 10rem;
+}
+
+.info .button-info {
+  background-color: var(--second-color);
+}
+
+.info .button-info:hover {
+  background-color: rgb(199, 210, 220);
+}
+
+.info h2 {
+  font-size: 2.5rem;
+  font-family: "QLD", sans-serif;
+  font-weight: bold;
+  color: var(--second-color);
+}
+
+.info .alamat {
+  font-size: 1rem;
+}
+
+.info a {
+  background: var(--second-color);
+  font-weight: 500;
+  color: black;
+  border: none;
+  margin-top: 5px;
+}
+
+.info a:hover {
+  background: var(--hover-color);
+  color: black;
+}
+
+/* story */
+.story {
+  /* background-color: var(--primary-color); */
+  padding-top: 5rem;
+  padding-bottom: 8rem;
+}
+
+.story h2 {
+  font-size: 2.5rem;
+  font-family: "QLD", sans-serif;
+  font-weight: bold;
+  color: var(--bg);
+}
+
+.story p {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: var(--bg);
+}
+
+.story .timeline {
+  list-style: none;
+  padding: 1.4rem 0;
+  position: relative;
+  margin-top: 1rem;
+}
+
+.story .timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 60%;
+  width: 3px;
+  background-color: var(--second-color);
+}
+
+.story .timeline li {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.story .timeline li::before,
+.story .timeline li::after {
+  content: "";
+  display: table;
+}
+
+.story .timeline li::after {
+  clear: both;
+}
+
+.timeline li .timeline-image {
+  width: 160px;
+  height: 160px;
+  background-color: white;
+  position: absolute;
+  left: 60%;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+/** timeline kiri **/
+.timeline li .timeline-panel {
+  margin-top: -20px;
+  width: 40%;
+  float: left;
+  padding: 1.5rem;
+  position: relative;
+  /* border: 1px solid var(--hover-color); */
+  background-color: var(--second-color);
+  border-radius: 10px;
+}
+
+.timeline li .timeline-panel::before {
+  content: "";
+  position: absolute;
+  top: 90px;
+  right: -14px; /* ubah dari right ke left */
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 0 10px 15px; /* ubah urutan border-width */
+  border-color: transparent transparent transparent var(--second-color); /* ubah sisi kiri yang punya warna */
+}
+
+/** timeline kanan (reverse) **/
+.timeline li.timeline-reverse .timeline-panel {
+  width: 40%;
+  margin-top: -20px;
+  float: right;
+  padding: 1.5rem;
+  position: relative;
+  background-color: var(--second-color);
+  border-radius: 10px;
+  transform: translateX(50%);
+}
+
+.timeline li.timeline-reverse .timeline-panel::before {
+  content: "";
+  position: absolute;
+  top: 90px;
+  left: -14px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 15px 10px 0;
+  border-color: transparent var(--second-color) transparent transparent;
+}
+
+
+/* gallery */
+.gallery {
+  /* background: var(--second-color); */
+  padding-top: 5rem;
+  padding-bottom: 8rem;
+}
+
+.gallery h2 {
+  font-size: 2.5rem;
+  font-family: "QLD", sans-serif;
+  font-weight: bold;
+  color: var(--bg);
+}
+
+/* footer */
+.footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
+.footer p.mb-1 {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.footer p.mb-2 {
+  font-size: 0.9rem;
+  color: #bbb;
+  margin-bottom: 0.5rem;
+}
+
+.footer hr {
+  max-width: 200px;
+  margin: 0.8rem auto;
+  border-color: #ccc;
+}
+
+.footer p.copyright {
+  font-size: 0.8rem;
+  color: #999;
+  margin: 0;
+}
+
+
+/* ==== media query ==== */
+
+/* extra large */
+@media (max-width: 1200px) {
+  .home .couple .heart {
+    transform: translateX(-50%) translateY(25px);
+  }
+}
+
+/* laptop */
+@media (max-width: 992px) {
+  html {
+    font-size: 85%;
+  }
+
+  .home .couple .heart {
+    display: none;
+  }
+
+  .mynavbar {
+    overflow-x: hidden;
+  }
+
+  /* story */
+  .story .timeline::before {
+    left: 15%;
+  }
+
+  .timeline li .timeline-image {
+    left: 15%;
+    width: 120px;
+    height: 120px;
+  }
+
+  /* panel sebelah kanan (atas dan bawah)  */
+  .timeline li .timeline-panel {
+    width: 70%;
+    float: right;
+    margin-top: 0;
+    padding: 1.5rem;
+    position: relative;
+    background-color: var(--second-color);
+    border-radius: 10px;
+    transform: translateX(3%);
+  }
+
+  .timeline li .timeline-panel::before {
+    content: "";
+    position: absolute;
+    top: 55px;
+    left: -14px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 15px 10px 0;
+    border-color: transparent var(--second-color) transparent transparent;
+  }
+
+  /* panel sebelah kiri (lapisan tengah) */
+  .timeline li.timeline-reverse .timeline-panel {
+    width: 70%;
+    float: left;
+    margin-top: 0;
+    padding: 1.5rem;
+    position: relative;
+    background-color: var(--second-color);
+    border-radius: 10px;
+    transform: translateX(45%);
+  }
+
+  .timeline li.timeline-reverse .timeline-panel::before {
+    content: "";
+    position: absolute;
+    top: 55px;
+    left: -14px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 15px 10px 0;
+    border-color: transparent var(--second-color) transparent transparent;
+  }
+}
+
+/* tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 85%;
+  }
+
+  /* panel  */
+
+  /* panel sebelah kanan (atas dan bawah)  */
+  .timeline li .timeline-panel {
+    width: 70%;
+    float: right;
+    padding: 1.5rem;
+    margin-top: -10px;
+    position: relative;
+    background-color: var(--second-color);
+    border-radius: 10px;
+    transform: translateX(10%);
+  }
+
+  .timeline li .timeline-panel::before {
+    content: "";
+    position: absolute;
+    top: 55px;
+    left: -14px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 15px 10px 0;
+    border-color: transparent var(--second-color) transparent transparent;
+  }
+
+  /* panel sebelah kiri (lapisan tengah) */
+  .timeline li.timeline-reverse .timeline-panel {
+    width: 70%;
+    float: left;
+    padding: 1.5rem;
+    position: relative;
+    background-color: var(--second-color);
+    border-radius: 10px;
+    transform: translateX(53%);
+  }
+
+  .timeline li.timeline-reverse .timeline-panel::before {
+    content: "";
+    position: absolute;
+    top: 55px;
+    left: -14px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 15px 10px 0;
+    border-color: transparent var(--second-color) transparent transparent;
+  }
+}
+
+/* handphone (mobile) */
+@media (max-width: 576px) {
+  html {
+    font-size: 75%;
+  }
+
+  .mynavbar .navbar-nav .nav-link {
+    font-size: 1.2rem !important;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
